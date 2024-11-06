@@ -1,0 +1,140 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background: url(padangmasyar.jpg);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+/* Header styling */
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+    text-align: center;
+    background: white;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow products to wrap to the next line if necessary */
+    justify-content: space-between; /* Space out products */
+    margin: 20px auto;
+}
+
+h2 {
+    padding: 14PX;
+    background-color: #f4f4f4;
+    margin-left: 230px;
+    margin-right: 230px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    margin-top: 20px;
+    color: #4CAF50;
+    text-align: center;
+}
+
+
+/* Product styling */
+.product {
+    display: inline-block;
+    width: calc(50% - 40px);
+    margin: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.product p {
+    font-size: 1.2em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+.buy-btn {
+    background: #2110e4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buy-btn:hover {
+    background: #0f0f0f;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .product {
+        width: calc(100% - 40px);
+    }
+}

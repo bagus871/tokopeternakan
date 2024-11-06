@@ -1,0 +1,117 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: url(rumput.jpg);
+    background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+    background-color: #f9f9f9; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+}
+
+
+/* Header styling */
+header {
+    background: #4CAF50; /* Warna hijau */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ddd; /* Warna saat hover */
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.galeri{
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow products to wrap to the next line if necessary */
+    justify-content: space-between; /* Space out products */
+    margin: 20px auto;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+.h2p1{
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+.h2p{
+    color: #000000;
+  
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    max-width: 300px; /* Atur lebar maksimum gambar */
+    height: auto; /* Pertahankan rasio aspek */
+    border-radius: 8px; /* Sudut membulat */
+    margin: 10px auto; /* Margin atas dan bawah, dan auto untuk tengah */
+    display: block; /* Agar gambar berada di tengah */
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
